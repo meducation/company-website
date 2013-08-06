@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require ../../../vendor/assets/stylesheets/bootstrap.min.css
+ *= require ../../../vendor/assets/stylesheets/font-awesome.css
  *= require ../../../vendor/assets/stylesheets/style.css
  *= require ../../../vendor/assets/stylesheets/header1.css
  *= require ../../../vendor/assets/stylesheets/bootstrap-responsive.min.css
@@ -31,6 +32,18 @@
     }
 }
 
+.purchase {
+    background:#ddd;
+}
+
+.service {
+    i {
+        padding:0px;
+        width:14%;
+        font-size:40px;
+    }
+}
+
 .da-slider {
     background-image: image-url('index-bg.jpg');
 
@@ -42,8 +55,14 @@
             background-image: image-url('bg-text.png')
         }
     }
-
-    .da-dots {
-        display:none;
+    .da-dots span{
+        background-image: image-url('bg-text.png')
     }
+    .da-arrows span{
+        background-image: image-url('arrows.png')
+    }
+}
+
+.collapse li.dropdown-toggle:hover > ul.dropdown-menu {
+    display: block;    
 }

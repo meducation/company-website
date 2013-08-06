@@ -10,8 +10,8 @@
                     %a{href:root_path} Home
                 %li
                     %a{href: about_path} About
-                %li
-                    %a.dropdown-toggle{href:"#", "data-toggle" => "dropdown"} 
+                %li.dropdown-toggle
+                    %a{href:jobs_path, "data-hover" => "dropdown"} 
                         Jobs
                         %b.caret
                     %ul.dropdown-menu
@@ -28,3 +28,6 @@
                         %li
                             =link_to "Marketer", marketer_job_path
                     %b.caret-out
+                %li
+                %li
+                    %a{href:investors_path} Investors

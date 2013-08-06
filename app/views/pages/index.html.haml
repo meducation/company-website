@@ -14,22 +14,69 @@
 
             .da-img
                 =image_tag "index-screenshots.png"
- 
+
+        .da-slide
+            %h2
+                %i WE'RE RAISING £350K
+                %br
+                %i INVESTMENT TO EXPAND
+            %p 
+                %i Watch this video to learn about
+                %br
+                %i our vision and our business plan.
+            .da-img.span6
+                .span6
+                    <iframe src="http://player.vimeo.com/video/71727900?title=0&amp;byline=0&amp;portrait=0" width="100%" height="320" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+
 .row-fluid.purchase.margin-bottom-30
     .container
         .span8
-            %span We're looking for top talent
+            %span We Are Looking For Top Talent
             %p We are revolutionising the way people learn medicine, and saving lives in the process. If this excites you, come and work for us! We're looking for smart, talented, passionate people who fit into our team. 
-
-
         %a.btn-buy.hover-effect.pull-right{href: jobs_path} View Opportunities »
-%section
-    .container
-        %h2 Revolutionising Medical Education
-        .row
-            .span4
-                Bring Medical Professionals
-            .span4
-                A other stuff
-            .span4
-                The best stuff
+
+.container
+    .row-fluid
+        .span9
+            .headline
+                %h3 What Are We Doing?
+            .row-fluid.service-alternative
+                .span4
+                    .service.clearfix
+                        %i.icon-user-md
+                        .desc
+                            %h4 Building a Community
+                            %p We are connecting medics from all around the world in a professional educational setting where they can learn medicine better, and share their knowledge with each other.
+
+                .span4
+                    .service.clearfix
+                        %i.icon-book
+                        .desc
+                            %h4 Digitalising Publishers
+                            %p Publishers have stuggled to digitally innovate their textbooks. We're helping them by creating a single marketplace, and building exciting technology that's focused on the student's needs.
+                
+                .span4
+                    .service.clearfix
+                        %i.icon-ambulance
+                        .desc
+                            %h4 Saving Lives
+                            %p Better doctors mean better medicine, which means better healthcare and saved lives. We're really passionate about making a difference in the world, especially in the poorest countries. That's what gets us out of bed in the morning.
+                
+
+        .span3
+            .posts.margin-bottom-30
+                .headline
+                    %h3 Recent Blog Entries
+                .dl-horizontal
+                    %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_path
+
+                    %dd
+                        %p
+                            = link_to rob_styles_blog_path do
+                                Rob Styles joins the Meducation team as a senior software developer.
+
+.container
+    .row-fluid.margin-bottom-5
+        %blockquote.hero
+            %p We are passionate about making a difference to the lives of medical professionals, and subsequently a difference to the lives of everyone in the world. We want to see medicine improve and develop more quickly and believe collaberative and education are the keys to this.
+            %small CTO, Jeremy Walker

@@ -39,8 +39,66 @@
 
         .footer
             .container
-                Footer
+                .row-fluid
+                    .span4
+                        .headline
+                            %h3 About
+                        %p.margin-bottom-25 Meducation is revolutionising medical education by bring medics, their knowldge, and their resources together into one digtal space. Join us!
+
+                        .headline
+                            %h3 Monthly Newsletter
+                        %p Subscribe to our newsletter and stay up to date with the latest news and progress!
+                        %form.form-inline
+                            .input-append
+                                %input{type: "text", placeholder: "Email Address", class: "input-medium"}
+                                %button.btn-u Subscribe
+                    
+                    .span4
+                        .posts
+                            .headline
+                                %h3 Recent Blog Entries
+                            %dl.dl-horizontal
+                                %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_path
+
+                                %dd
+                                    %p
+                                        = link_to rob_styles_blog_path do
+                                            Rob Styles joins the Meducation team as a senior software developer.
+
+                    .span4
+                        .headline
+                            %h3 Contact Us
+                        %address
+                            70 Coast Road, West Mersea
+                            %br
+                            Colchester, Essex, CO5 8LS, UK
+                            %br
+                            Phone: +44 7739 966 244
+                            %br
+                            Email: 
+                            %a{href:"mailto:hello@meducation.net"} hello@meducation.net
+
+                        .headline
+                            %h3 Stay Connected
+                        %ul.social-icons
+                            %li 
+                                %a.social_facebook{href:"http://www.facebook.com/meducationnet", "data-original-title" => "Facebook"}
+                            %li 
+                                %a.social_twitter{href:"http://www.twitter.com/meducation", "data-original-title" => "Twitter"}
+                            %li 
+                                %a.social_googleplus{href:"https://plus.google.com/102134040286565875525", "data-original-title" => "Google Plus"}
+                            %li 
+                                %a.social_pintrest{href:"#", "data-original-title" => "Pinterest"}
+                            %li 
+                                %a.social_linkedin{href:"http://www.linkedin.com/company/2673437", "data-original-title" => "Linkedin"}
+                            %li 
+                                %a.social_vimeo{href:"http://www.vimeo.com/ihid", "data-original-title" => "Vimeo"}
 
         .copyright
             .container
-                Copyright
+                .row-fluid
+                    .span8
+                        %p 2013 &copy; New Media Education Ltd. ALL Rights Reserved. 
+                    .span4
+                        %a.pull-right{href: root_path}
+                            =image_tag "logo.png", id:"logo-footer", alt:""
