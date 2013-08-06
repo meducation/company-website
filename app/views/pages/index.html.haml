@@ -67,7 +67,7 @@
             .posts.margin-bottom-30
                 .headline
                     %h3 Recent Blog Entries
-                .dl-horizontal
+                %dl.dl-horizontal
                     %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_path
 
                     %dd
@@ -75,6 +75,14 @@
                             = link_to rob_styles_blog_path do
                                 Rob Styles joins the Meducation team as a senior software developer.
 
+
+                %dl.dl-horizontal
+                    %dt= link_to image_tag("bg-text.png"), rob_styles_blog_path
+
+                    %dd
+                        %p
+                            = link_to rob_styles_blog_path do
+                                We've launched our new company website with some great job opportunities.
 .container
     .row-fluid.margin-bottom-5
         %blockquote.hero
