@@ -1,18 +1,46 @@
 !!!
-%html
+/[if IE 7]
+    %html{lang:"en", class:"ie7"}<>
+/[if IE 8]
+    %html{lang:"en", class:"ie8"}<>
+/[if IE 9]
+    %html{lang:"en", class:"ie9"}<>
+<!--[if !IE]><!--> 
+%html{lang:"en"}<>
+    <!--<![endif]-->
     %head
         %title Meducation
         = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
         = javascript_include_tag "application", "data-turbolinks-track" => true
         = csrf_meta_tags
+        
+        %meta{charset: "utf-8"}
+        %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+        %meta{content: "Meducation", name: "author"}
+        %meta{content: "Meducation's Company Website", name: "description"}
+
+        :javascript
+            jQuery(document).ready(function() {
+                App.init();
+                App.initSliders();
+                Index.initParallaxSlider();
+            });
+
     %body
-        %header
+        .top
             .container
-                Meducation
-        %navbar
+        .header
             .container
-                %a{href: "/"} Home
-                %a{href: "/about"} About
-                %a{href: "/jobs"} Jobs
-        .container
-            =yield
+                .logo
+                    =link_to image_tag("logo.png", alt:"Logo", id: "#logo-header"), root_path
+                =render "layouts/menu"
+
+        =yield
+
+        .footer
+            .container
+                Footer
+
+        .copyright
+            .container
+                Copyright

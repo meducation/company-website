@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require ../../../vendor/assets/stylesheets/bootstrap.min.css
+ *= require ../../../vendor/assets/stylesheets/style.css
+ *= require ../../../vendor/assets/stylesheets/header1.css
+ *= require ../../../vendor/assets/stylesheets/bootstrap-responsive.min.css
+ *= require ../../../vendor/assets/stylesheets/style_responsive.css
+ *= require ../../../vendor/assets/stylesheets/flexslider.css
+ *= require ../../../vendor/assets/stylesheets/parallax-slider.css
+ *= require ../../../vendor/assets/stylesheets/blue.css
+ *= require ../../../vendor/assets/stylesheets/header1-blue.css
+ *= require_self
+ *= require_tree .
+ */
+
+.header {
+    border-bottom:0px; 
+    .logo {
+        top:-3px;
+        img {
+            height:33px;
+        }
+    }
+}
+
+.da-slider {
+    background-image: image-url('index-bg.jpg');
+
+    .da-slide {
+        h2 i {
+            background-image: image-url('bg-heading-blue.png')
+        }
+        p i {
+            background-image: image-url('bg-text.png')
+        }
+    }
+
+    .da-dots {
+        display:none;
+    }
+}
