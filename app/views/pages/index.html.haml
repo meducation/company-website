@@ -36,32 +36,59 @@
         %a.btn-buy.hover-effect.pull-right{href: jobs_path} View Opportunities »
 
 .container
+    .row-fluid.service-alternative
+        .span4
+            .service.clearfix
+                %i.icon-user-md
+                .desc
+                    %h4 Building a Community
+                    %p We are connecting medics from all around the world in a professional educational setting where they can learn medicine better, and share their knowledge with each other.
+
+        .span4
+            .service.clearfix
+                %i.icon-book
+                .desc
+                    %h4 Digitalising Publishers
+                    %p Publishers have stuggled to digitally innovate their textbooks. We're helping them by creating a single marketplace, and building exciting technology that's focused on the student's needs.
+        
+        .span4
+            .service.clearfix
+                %i.icon-ambulance
+                .desc
+                    %h4 Saving Lives
+                    %p Better doctors mean better medicine, which means better healthcare and saved lives. We're really passionate about making a difference in the world, especially in the poorest countries. That's what gets us out of bed in the morning.
+        
+-#
+    .container
+        .row-fluid
+            .span3
+                .headline
+                    %h3 Twitter Activity
+
+                <a class="twitter-timeline" href="https://twitter.com/Meducation" data-widget-id="364905287938895872">Tweets by @Meducation</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-#
+    .container
+        .row-fluid
+            .headline
+                %h3 Show Me Some Examples
+            %ul.thumbnails
+                %li.span3
+                    .thumbnail-style.thumbnail-kenburn
+                        .thumbnail-img
+                            .overflow-hidden
+                                =image_tag("screenshot_exam_room.png")
+                                %a.btn-more.hover-effect{href: "#"} read more +
+                        %h3
+                            %a.hover-effect{href: "#"} Exam Room
+                        %p The Meducation exam room helps medics test themselves as they learn and revise, simulating the exams they must sit to progress.
+
+.container
     .row-fluid
         .span9
-            .headline
-                %h3 What Are We Doing?
-            .row-fluid.service-alternative
-                .span4
-                    .service.clearfix
-                        %i.icon-user-md
-                        .desc
-                            %h4 Building a Community
-                            %p We are connecting medics from all around the world in a professional educational setting where they can learn medicine better, and share their knowledge with each other.
-
-                .span4
-                    .service.clearfix
-                        %i.icon-book
-                        .desc
-                            %h4 Digitalising Publishers
-                            %p Publishers have stuggled to digitally innovate their textbooks. We're helping them by creating a single marketplace, and building exciting technology that's focused on the student's needs.
-                
-                .span4
-                    .service.clearfix
-                        %i.icon-ambulance
-                        .desc
-                            %h4 Saving Lives
-                            %p Better doctors mean better medicine, which means better healthcare and saved lives. We're really passionate about making a difference in the world, especially in the poorest countries. That's what gets us out of bed in the morning.
-                
+            %blockquote.hero
+                %p We are passionate about making a difference to the lives of medical professionals, and subsequently a difference to the lives of everyone in the world. We want to see medicine improve and develop more quickly and believe collaberative and education are the keys to this.
+                %small CTO, Jeremy Walker
         .span3
             .posts.margin-bottom-30
                 .headline
@@ -82,16 +109,3 @@
                         %p
                             = link_to rob_styles_blog_path do
                                 We've launched our new company website with some great job opportunities.
-
-.container
-    .row-fluid
-        .span9
-            %blockquote.hero
-                %p We are passionate about making a difference to the lives of medical professionals, and subsequently a difference to the lives of everyone in the world. We want to see medicine improve and develop more quickly and believe collaberative and education are the keys to this.
-                %small CTO, Jeremy Walker
-        .span3
-            .headline
-                %h3 Twitter Activity
-
-            <a class="twitter-timeline" href="https://twitter.com/Meducation" data-widget-id="364905287938895872">Tweets by @Meducation</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

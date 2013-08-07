@@ -1,6 +1,6 @@
-.row-fluid.breadcrumbs.margin-bottom-40
+.row-fluid.breadcrumbs.margin-bottom-20
     .container
-        %h1.pull-left About Us
+        %h1.pull-left About Meducation
         %ul.pull-right.breadcrumb
             %li
                 =link_to "Home", root_path
@@ -10,5 +10,64 @@
 .container
     .row-fluid
         .span6
+            .headline
+                %h3 What is Meducation?
+            %p Meducation is a social network with a strong educational focus. We connect medics in a similar way to LinkedIn, plus we allow them to talk and discuss their progress through their careers. As they research new ideas, have questions they need answering, or knowledge they want to share, they can use Meducation to talk to their peers.
+            %p.margin-bottom-20
+                %a.btn-u.hover-effect{href: "https://www.meducation.net"} Visit Meducation »
+
+            .headline
+                %h3 How has Meducation developed?
+            .row-fluid
+                .span1.about-date 2008
+                %p.span11 Meducation started when Alastair, a medical student at Bristol, felt there was a lack of support among his peers, and wanted to be able to connect and share his work with other medical students throughout the country. He chatted to his friend Jeremy and together they made the first version of Meducation.
+            .row-fluid
+                .span1.about-date 2011
+                %p.span11 After gaining early traction in Bristol and Birmingham they realised there was a real opportunity to connect not only students but also medics of all types and stages. They put their careers on hold and started working full-time on Meducation.
+            .row-fluid
+                .span1.about-date 2013
+                %p.span11 After 2 years of working on it, 30,000 medics have joined Meducation including over 33% of UK medical students. Meducation is now raising a funding round and expanding it's team in order to reach out to medics all over the world.
         .span6
             =image_tag "office.jpg"
+
+.container
+    .row-fluid
+        .headline
+            %h3 The Team
+        %ul.thumbnails.team
+            %li.span3
+                .thumbnail-style
+                    .thumbnail-img
+                        .overflow-hidden
+                            =image_tag("al.jpg")
+                    %h3
+                        %a.hover-effect{href: "#"} Dr Alastair Buick
+                        %small Co-founder &amp; CEO
+                    %p Some blurb about Al
+            %li.span3
+                .thumbnail-style
+                    .thumbnail-img
+                        .overflow-hidden
+                            =image_tag("jeremy.jpg")
+                    %h3
+                        %a.hover-effect{href: "#"} Jeremy Walker
+                        %small Co-founder &amp; CTO
+                    %p Some blurb about Jeremy
+            %li.span3
+                .thumbnail-style
+                    .thumbnail-img
+                        .overflow-hidden
+                            =image_tag("ray.png")
+                    %h3
+                        %a.hover-effect{href: "#"} Mr Raymond Buick
+                        %small Medical Director
+                    %p Some blurb about Ray
+            %li.span3
+                .thumbnail-style
+                    .thumbnail-img
+                        .overflow-hidden
+                            =image_tag("rob_styles.jpg")
+                    %h3
+                        %a.hover-effect{href: "#"} Rob Styles
+                        %small Senior Software Developer
+                    %p Some blurb about Rob
