@@ -1,38 +1,73 @@
-%section
+.row-fluid.breadcrumbs.margin-bottom-20
     .container
-        %h2 Jobs
-        %h3 We're Hiring!
-        %p We're at a hugely exciting point in our journey. After two years of building Meducation with just the two founder, we're finally at a point where we can hire people!  We are looking for seven talented individuals who want to revolutionse medical education with us. 
-        %p The whole ethos of our vision is around people, and this is represented in the way we want to develop our company. We want to build a team who trust and respect each other, who enjoy each others' company and who love working together. We believe that a happy team is a productive team and we know that people are individuals and work in their own ways. 
-        %p Here are some of our principles.
-        %ul
-            %li 
-                %em Work when you want.
-                We don't have office hours because we know that different people work best at different times. Rise with the sun, or rise with the sunset? It makes no difference to us!
-            %li 
-                %em Work where you want.
-                Office, home, coffee-shop? It's up to you. We hope you'll want to hang out with us in the office reguarly, but we dread the idea of having a fixed place to work from each day, so we would never want to inflict that on you!
-            %li 
-                %em Be in control of your holiday. 
-                Want a couple of weeks off? Great. Want to work for 14days straight because you're absolutely engrossed in what you're making. Awesome (Although you'll probably need a week off afterwards to recover)! We don't have holiday allowences - simply take a break when you want one. 
-            %li 
-                %em Be paid well, and without performance rewards.
-                Money's important and we want you to feel like you are paid what you deserve. We think performance-related pay is a patronising way of trying to force people to work harder and just increases stress. If you love what you're working on, and love the team you're working in, you're going to do your best each day, and that's all we'll ever ask.
+        %h1.pull-left Job Opportunities
+        %ul.pull-right.breadcrumb
             %li
-                %em Be challenged and learn.
-                In our experience smart people like interesting challenges. The scale and complexity of what we want to build is exciting in itself, and we have loads of hard problems to solve, which others have failed to do, both on the tech and social sides.
-            %li 
-                %em Contribute to open source.
-                We're really passionate about open source and intend to release 90% of our code under open source licences. If you're a developer, you'll be working with us to build libraries that power the internet, not just Meducation!
-            %li
-                %em Get support on your own projects and ideas.
-                Life is boring if it's spent on just one thing. If you have ideas and concepts you want to explore, we want to support you in that and ue our knowledge and expertise to help you build your future!
-        %h3 Current Job Opportunities
-        %ul
-            %li= link_to "Designer", designer_job_path
-            %li= link_to "Frontend Developer", frontend_developer_job_path
-            %li= link_to "Backend Developer", backend_developer_job_path
-            %li= link_to "Full Stack Developer", full_stack_developer_job_path
-            %li= link_to "Community Manager", community_manager_job_path
-            %li= link_to "Content Manager", content_manager_job_path
-            %li= link_to "Marketer", marketer_job_path
+                =link_to "Home", root_path
+                %span.divider /
+            %li.active Job Opportunities
+
+.container
+    .row-fluid
+        .span8
+            .row-fluid
+                .headline
+                    %h3 We're Hiring
+                %p We're at a hugely exciting point in our journey! After two years of building Meducation with just Alastair and Jeremy, we're finally at a point where we can hire people!  We are looking for seven talented individuals who want to revolutionse medical education with us. 
+
+                .headline
+                    %h3 Our Principles
+                %p The whole ethos of our vision is around people, and this is represented in the way we want to develop our company. We want to build a team who trust and respect each other, who enjoy each others' company and who love working together. We believe that a happy team is a productive team and we know that people are individuals and work in their own ways. 
+                %p Here are some of our principles.
+                .row-fluid.servive-block
+                    .span4
+                        %h4 Work when you want
+                        %p
+                            %i.icon-time
+                        %p We don't have office hours because we know that different people work best at different times. Rise with the sun, or rise with the sunset? It makes no difference to us.
+                    .span4
+                        %h4 Work where you want
+                        %p
+                            %i.icon-home
+                        %p Office, home, coffee-shop? It's up to you. We hope you'll want to hang out with us in the office reguarly, but we dread the idea of having a fixed place to work from each day, so we would never want to inflict that on you!
+                    .span4
+                        %h4 Take holiday when you want
+                        %p
+                            %i.icon-plane
+                        %p Want a couple of weeks off? Great. Want to work for 14days straight because you're absolutely engrossed in what you're making. Hero! We don't have holiday allowences - simply take a break when you want one. 
+                .row-fluid.servive-block
+                    .span4
+                        %h4 Be paid well and fairly
+                        %p
+                            %i.icon-gbp
+                        %P Money is important and we want you to feel that you are paid what you deserve. We don't do performance-related pay - it just increases stress. If you love what you're working on, and love the team you're working in, you're going to do your best each day, and that's all we'll ever ask.
+                    .span4
+                        %h4 Be challenged and learn
+                        %p
+                            %i.icon-puzzle-piece
+                        %p In our experience smart people like interesting challenges. The scale and complexity of what we want to build is exciting in itself, and we have loads of hard problems to solve, which others have failed to do, both on the tech and social sides.
+                    .span4
+                        %h4 Get support on your own projects
+                        %p
+                            %i.icon-bell
+                        %p Life is boring if it's spent on just one thing. If you have ideas and concepts you want to explore, we want to support you in that and ue our knowledge and expertise to help you build your future!
+                    -#
+                        .span4
+                            %h4 Contribute to open source
+                            %p
+                                %i.icon-bell
+                            %p We're really passionate about open source and intend to release 90% of our code under open source licences. If you're a developer, you'll be working with us to build libraries that power the internet, not just Meducation!
+
+        .span1
+        .span3
+            .headline
+                %h3 Current Opportunities
+            %ul
+                %li= link_to "Designer", designer_job_path
+                %li= link_to "Frontend Developer", frontend_developer_job_path
+                %li= link_to "Backend Developer", backend_developer_job_path
+                %li= link_to "Full Stack Developer", full_stack_developer_job_path
+                %li= link_to "Community Manager", community_manager_job_path
+                %li= link_to "Content Manager", content_manager_job_path
+                %li= link_to "Marketer", marketer_job_path
+            .margin-bottom-30= render "layouts/blog_posts"

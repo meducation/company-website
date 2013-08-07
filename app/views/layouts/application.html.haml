@@ -11,6 +11,7 @@
     %head
         %title Meducation
         = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+        = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", media: "all"
         = javascript_include_tag "application", "data-turbolinks-track" => true
         = csrf_meta_tags
         
@@ -54,24 +55,7 @@
                                 %button.btn-u Subscribe
                     
                     .span4
-                        .posts
-                            .headline
-                                %h3 Recent Blog Entries
-                            %dl.dl-horizontal
-                                %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_path
-
-                                %dd
-                                    %p
-                                        = link_to rob_styles_blog_path do
-                                            Rob Styles joins the Meducation team as a senior software developer.
-
-                            %dl.dl-horizontal
-                                %dt= link_to image_tag("bg-text.png"), rob_styles_blog_path
-
-                                %dd
-                                    %p
-                                        = link_to rob_styles_blog_path do
-                                            We've launched our new company website with some great job opportunities.
+                        = render "layouts/blog_posts"
 
                     .span4
                         .headline
