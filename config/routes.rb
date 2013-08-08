@@ -12,8 +12,8 @@ Company::Application.routes.draw do
   get "content_manager_job" => "jobs#content_manager"
   get "marketer_job" => "jobs#marketer"
 
-  get "blog" => "blog#rob_styles"
-  get "rob_styles_blog" => "blog#rob_styles"
+  get "blog" => "blog#index"
+  get "blog/rob_styles" => "blog#rob_styles", as: "rob_styles_blog"
 
   root "pages#index"
 end

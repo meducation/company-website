@@ -1,0 +1,42 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Latest Posts
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Blog", blog_path
+                %span.divider /
+            %li.active Rob Styles Joins Meducation
+
+=render layout: "blog/layout" do
+    .blog.margin-bottom-30
+        %h3 Rob Styles Joins Meducation
+        %ul.unstyled.inline.blog-info
+            %li
+                %i.icon-calendar 
+                August 8, 2013
+            %li
+                %i.icon-pencil 
+                    Jeremy Walker
+            %li
+                %i.icon-tags
+                %a{href:"#"} Team
+        .blog-img
+            =image_tag "rob_styles_blog_header.jpg"
+        %p For five years, Al and I have held the vision of Meducation closely in our hearts, watching it develop from a fun side-project into something that has the power to change the world. Meducation is a bit like a child for us and we've invested our lives into it as carefully tried to nurture it through its early stages. We're now at a time that's both exciting and scary in our journey, where for the first time we will give away some of that control to other people who join our team. 
+        %p Today we're proud and excited to announce the first person we are entrusting that vision to: Rob Styles - our Employee #1.
+
+        #disqus_thread
+        :javascript
+            var disqus_shortname = 'meducation-company';
+            var disqus_identifier = 'blog/rob_styles';
+            var disqus_title = 'Rob Styles Joins Meducation';
+            var disqus_url = 'http://company.meducation.net/blog/rob_styles';
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();

@@ -41,5 +41,13 @@ describe ApplicationHelper do
       helper.stub(controller_name: "foobar")
       helper.menu_item_class(:jobs).should be_nil
     end
+
+    it "should correctly return active for blog" do
+      helper.stub(controller_name: "blog")
+      helper.menu_item_class(:blog).should == "active"
+      
+      helper.stub(controller_name: "blog")
+      helper.menu_item_class(:blog).should be_nil
+    end
   end
 end
