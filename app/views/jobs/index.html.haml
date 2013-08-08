@@ -18,29 +18,25 @@
                 .headline
                     %h3 Our Principles
                 %p The whole ethos of our vision is around people, and this is represented in the way we want to develop our company. We want to build a team who trust and respect each other, who enjoy each others' company and who love working together. We believe that a happy team is a productive team and we know that people are individuals and work in their own ways. 
-                %p Here are some of our principles.
+                %p Taking a lead from successful companies like Github, Steam, 37signals and Medium, here are some of our principles with regards to work.
                 .row-fluid.servive-block
                     .span4
-                        %h4 Work when you want
+                        %h4 Work when's right for you
                         %p
                             %i.icon-time
-                        %p We don't have office hours because we know that different people work best at different times. Rise with the sun, or rise with the sunset? It makes no difference to us.
+                        %p We don't have office hours because we know that different people work best at different times. Rise with the sun, or rise with the sunset? We respect your choice.
                     .span4
-                        %h4 Work where you want
+                        %h4 Work where's best for you
                         %p
                             %i.icon-home
-                        %p Office, home, coffee-shop? It's up to you. We hope you'll want to hang out with us in the office reguarly, but we dread the idea of having a fixed place to work from each day, so we would never want to inflict that on you!
-                    .span4
-                        %h4 Take holiday when you want
-                        %p
-                            %i.icon-plane
-                        %p Want a couple of weeks off? Great. Want to work for 14days straight because you're absolutely engrossed in what you're making. Hero! We don't have holiday allowences - simply take a break when you want one. 
-                .row-fluid.servive-block
+                        %p Office, home, coffee-shop? Your choice. We hope you'll want to hang out with us in the office reguarly, but we don't work as well if we're in the same place each day, and so we understand that freedom.
                     .span4
                         %h4 Be paid well and fairly
                         %p
                             %i.icon-gbp
-                        %P Money is important and we want you to feel that you are paid what you deserve. We don't do performance-related pay - it just increases stress. If you love what you're working on, and love the team you're working in, you're going to do your best each day, and that's all we'll ever ask.
+                                %p We should all feel that we are paid what we deserve. We want to pay fairy and don't believe in performance-related pay, which just increases pressure &amp; stress. 
+                                If you love what you're working on, and love the team you're working in, you're going to do your best each day, and that's all we'll ever ask.
+                .row-fluid.servive-block
                     .span4
                         %h4 Be challenged and learn
                         %p
@@ -51,23 +47,29 @@
                         %p
                             %i.icon-bell
                         %p Life is boring if it's spent on just one thing. If you have ideas and concepts you want to explore, we want to support you in that and ue our knowledge and expertise to help you build your future!
-                    -#
-                        .span4
-                            %h4 Contribute to open source
-                            %p
-                                %i.icon-bell
-                            %p We're really passionate about open source and intend to release 90% of our code under open source licences. If you're a developer, you'll be working with us to build libraries that power the internet, not just Meducation!
+                    .span4
+                        %h4 Contribute to open source
+                        %p
+                            %i.icon-bell
+                        %p We're really passionate about open source and intend to release 90% of our code under open source licences. If you're a developer, you'll be working with us to build libraries that power the internet, not just Meducation!
 
         .span1
         .span3
             .headline
                 %h3 Current Opportunities
-            %ul
-                %li= link_to "Designer", designer_job_path
-                %li= link_to "Frontend Developer", frontend_developer_job_path
-                %li= link_to "Backend Developer", backend_developer_job_path
-                %li= link_to "Full Stack Developer", full_stack_developer_job_path
-                %li= link_to "Community Manager", community_manager_job_path
-                %li= link_to "Content Manager", content_manager_job_path
-                %li= link_to "Marketer", marketer_job_path
+            %p 
+                Over the next few days we'll be adding six job opportunities on here. If you'd like us to let you know when we put them live, or just fancy a chat about the idea of working with us, please get in touch at 
+                =succeed(".") do
+                    =link_to "hello@meducation.net", "mailto:hello@meducation.net"
+            %p= link_to "Email Us »", "mailto:hello@meducation.net", class: 'btn-u'
+
+            -#
+                %ul
+                    %li= link_to "Designer", designer_job_path
+                    %li= link_to "Frontend Developer", frontend_developer_job_path
+                    %li= link_to "Backend Developer", backend_developer_job_path
+                    %li= link_to "Full Stack Developer", full_stack_developer_job_path
+                    %li= link_to "Community Manager", community_manager_job_path
+                    %li= link_to "Content Manager", content_manager_job_path
+                    %li= link_to "Marketer", marketer_job_path
             .margin-bottom-30= render "layouts/blog_posts"

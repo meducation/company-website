@@ -14,23 +14,26 @@
                     %a{href:vision_path} Vision
                 %li{class: menu_item_class(:blog)}
                     %a{href:blog_path} Blog
-                %li.dropdown-toggle{class: menu_item_class(:jobs)}
-                    %a{href:jobs_path, "data-hover" => "dropdown"} 
-                        Jobs
-                        %b.caret
-                    %ul.dropdown-menu
-                        %li
-                            =link_to "Designer", designer_job_path
-                        %li
-                            =link_to "Front End Developer", frontend_developer_job_path
-                        %li
-                            =link_to "Back End Developer", backend_developer_job_path
-                        %li
-                            =link_to "Community Manager", community_manager_job_path
-                        %li
-                            =link_to "Content Manager", content_manager_job_path
-                        %li
-                            =link_to "Marketer", marketer_job_path
-                    %b.caret-out
-                %li{class: menu_item_class(:investors)}
-                    %a{href:investors_path} Investors
+                %li{class: menu_item_class(:jobs)}
+                    %a{href:jobs_path} Jobs
+                -#
+                    %li.dropdown-toggle{class: menu_item_class(:jobs)}
+                        %a{href:jobs_path, "data-hover" => "dropdown"} 
+                            Jobs
+                            %b.caret
+                        %ul.dropdown-menu
+                            %li
+                                =link_to "Designer", designer_job_path
+                            %li
+                                =link_to "Front End Developer", frontend_developer_job_path
+                            %li
+                                =link_to "Back End Developer", backend_developer_job_path
+                            %li
+                                =link_to "Community Manager", community_manager_job_path
+                            %li
+                                =link_to "Content Manager", content_manager_job_path
+                            %li
+                                =link_to "Marketer", marketer_job_path
+                        %b.caret-out
+                /%li{class: menu_item_class(:investors)}
+                /    %a{href:investors_path} Investors
