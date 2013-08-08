@@ -10,33 +10,44 @@
                 %span.divider /
             %li.active Rob Styles Joins Meducation
 
-=render layout: "blog/layout" do
-    .blog.margin-bottom-30
-        %h3 Rob Styles Joins Meducation
-        %ul.unstyled.inline.blog-info
-            %li
-                %i.icon-calendar 
-                August 8, 2013
-            %li
-                %i.icon-pencil 
-                    Jeremy Walker
-            %li
-                %i.icon-tags
-                %a{href:"#"} Team
-        .blog-img
-            =image_tag "rob_styles_blog_header.jpg"
-        %p Over the last five years, Al and I have invested a significant amount of our time and energy into Meducation. We have patiently developed it from a fun side project into something that has the power to change the world. While doing so we have always been careful to protect its vision and ethos, the core of what we do. We are now at an incredibly exciting time in our journey where for the first time we are able to bring a team on board to develop Meducation beyond where we could take it alone. 
-        %p Saying that, over the last few weeks my excitement has been tinged with a degree of nervousness, as I know that the people we hire will make or break this vision we have worked so hard to protect.  I am therefore both thrilled and relieved to introduce our first hire - someone I believe will add a real depth to Meducation and someone whom both Al and I am happy to entrust our vision to - Rob Styles.
 
-        #disqus_thread.margin-top-20
-        :javascript
-            var disqus_shortname = 'meducation-company';
-            var disqus_identifier = 'blog/rob_styles';
-            var disqus_title = 'Rob Styles Joins Meducation';
-            var disqus_url = 'http://company.meducation.net/blog/rob_styles';
+=render layout: "blog/rob_styles_layout" do
 
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
+    .row-fluid
+        .span6
+            %p 
+                I first met rob back in May at 
+                =succeed('.') do
+                    =link_to "Launch48", "http://birmingham.launch48.com"
+                We worked together on Project Aiya - a home automation concept where I was project leader, and Rob was in charge of the tech. You don't need to have more than one conversation with Rob to realise how smart he is, and how wide his knowledge of tech is, but what you might not immediately realise is that he also has a great business brain. Over that weekend, I quickly gained a respect for Rob from both the technical and business sides and knew I'd love to be able to work with him. 
+                
+            %p After Launch48 Rob was really helpful in giving his thoughts and advice on Meducation. He very quickly got a great understanding of where we've come from, our vision, and our business model, and as I got to know him better, it became clear that he'd be an exceptional addition to our team.
+
+            %p Rob is now taking a big risk in leaving his well paid job to come and work for a startup, but I'm convinced that with the team that we are building and the passion behind Meducation, it will prove to be an inspired decision.
+            %p If the idea of working for Meducation excites you too, please #{link_to "email me", "mailto: jeremy@meducation.net"} and we can see if there's a fit.
+
+        .span6
+            <blockquote class="twitter-tweet"><p>We have an app turning on devices. Massive win. Huge credit to <a href="https://twitter.com/mmmmmrob">@mmmmmrob</a>! Here&#39;s our promo video: <a href="http://t.co/O7P2aujiDD">http://t.co/O7P2aujiDD</a> - boom! <a href="https://twitter.com/search?q=%23bhaml48&amp;src=hash">#bhaml48</a></p>&mdash; Jeremy Walker (@iHiD) <a href="https://twitter.com/iHiD/statuses/336154076331003904">May 19, 2013</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    -#
+        .row-fluid
+            .span6
+                <blockquote class="twitter-tweet"><p>Fun day at <a href="https://twitter.com/search?q=%23bhaml48&amp;src=hash">#bhaml48</a>. Would have liked to have got more time with <a href="https://twitter.com/mmmmmrob">@mmmmmrob</a> - hopefully tomorrow! Now building two quick Sinatra apps. Fun!</p>&mdash; Jeremy Walker (@iHiD) <a href="https://twitter.com/iHiD/statuses/335896987616546818">May 18, 2013</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            .span6
+                <blockquote class="twitter-tweet"><p>We have an app turning on devices. Massive win. Huge credit to <a href="https://twitter.com/mmmmmrob">@mmmmmrob</a>! Here&#39;s our promo video: <a href="http://t.co/O7P2aujiDD">http://t.co/O7P2aujiDD</a> - boom! <a href="https://twitter.com/search?q=%23bhaml48&amp;src=hash">#bhaml48</a></p>&mdash; Jeremy Walker (@iHiD) <a href="https://twitter.com/iHiD/statuses/336154076331003904">May 19, 2013</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    #disqus_thread.margin-top-20
+    :javascript
+        var disqus_shortname = 'meducation-company';
+        var disqus_identifier = 'blog/rob_styles';
+        var disqus_title = 'Rob Styles Joins Meducation';
+        var disqus_url = 'http://company.meducation.net/blog/rob_styles';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();

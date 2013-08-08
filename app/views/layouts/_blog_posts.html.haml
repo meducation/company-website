@@ -3,18 +3,18 @@
         %h3 Recent Blog Entries
 
     %dl.dl-horizontal
-        %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_path
+        %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_post_path
 
         %dd
             %p
-                = link_to rob_styles_blog_path do
+                = link_to rob_styles_blog_post_path do
                     Rob Styles joins the Meducation team as a senior software developer.
 
 
     %dl.dl-horizontal
-        %dt= link_to image_tag("bg-text.png"), rob_styles_blog_path
+        %dt= link_to image_tag("bg-text.png"), new_website_blog_post_path
 
         %dd
             %p
-                = link_to rob_styles_blog_path do
-                    We've launched our new company website with some great job opportunities.
+                = link_to new_website_blog_post_path do
+                    We've launched our new company website.

@@ -1,0 +1,27 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Latest Posts
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Blog", blog_path
+                %span.divider /
+            %li.active Rob Styles Joins Meducation
+
+=render layout: "blog/new_website_layout" do
+
+    #disqus_thread.margin-top-20
+    :javascript
+        var disqus_shortname = 'meducation-company';
+        var disqus_identifier = 'blog/new_website';
+        var disqus_title = 'New Company Website ';
+        var disqus_url = 'http://company.meducation.net/blog/new_website';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+

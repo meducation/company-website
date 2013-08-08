@@ -29,8 +29,12 @@ body {
 .margin-top-20 { margin-top:20px; }
 .padding-top-10 { padding-top:10px; }
 
-.blog-info {
+.blog-page ul, .blog-page .blog-info {
     padding-top: 5px !important
+}
+
+.blog p a {
+    text-decoration:underline;
 }
 
 .header {

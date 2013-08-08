@@ -13,7 +13,9 @@ Company::Application.routes.draw do
   get "marketer_job" => "jobs#marketer"
 
   get "blog" => "blog#index"
-  get "blog/rob_styles" => "blog#rob_styles", as: "rob_styles_blog"
+  %w{rob_styles new_website}.each do |title|
+    get "blog/#{title}" => "blog##{title}", as: "#{title}_blog_post"
+  end
 
   root "pages#index"
 end
