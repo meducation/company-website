@@ -44,16 +44,18 @@
                     .span4
                         .headline
                             %h3 About
-                        %p.margin-bottom-25 Meducation is revolutionising medical education by bring medics, their knowldge, and their resources together into one digtal space. Join us!
+                        %p Meducation is revolutionising medical education by bringing medics, their knowldge, and their resources together into one digtal space. We're looking for smart, talented people to help us acheive this.
+                        %p.margin-bottom-25=link_to "Join our team »", jobs_path, class: "btn-u"
 
-                        .headline
-                            %h3 Monthly Newsletter
-                        %p Subscribe to our newsletter and stay up to date with the latest news and progress!
-                        %form.form-inline
-                            .input-append
-                                %input{type: "text", placeholder: "Email Address", class: "input-medium"}
-                                %button.btn-u Subscribe
-                    
+                        -#
+                            .headline
+                                %h3 Monthly Newsletter
+                            %p Subscribe to our newsletter and stay up to date with the latest news and progress!
+                            %form.form-inline
+                                .input-append
+                                    %input{type: "text", placeholder: "Email Address", class: "input-medium"}
+                                    %button.btn-u Subscribe
+                        
                     .span4
                         = render "layouts/blog_posts"
 
@@ -70,27 +72,22 @@
                             Email: 
                             %a{href:"mailto:hello@meducation.net"} hello@meducation.net
 
-                        .headline
-                            %h3 Stay Connected
-                        %ul.social-icons
-                            %li 
-                                %a.social_facebook{href:"http://www.facebook.com/meducationnet", "data-original-title" => "Facebook"}
-                            %li 
-                                %a.social_twitter{href:"http://www.twitter.com/meducation", "data-original-title" => "Twitter"}
-                            %li 
-                                %a.social_googleplus{href:"https://plus.google.com/102134040286565875525", "data-original-title" => "Google Plus"}
-                            %li 
-                                %a.social_pintrest{href:"#", "data-original-title" => "Pinterest"}
-                            %li 
-                                %a.social_linkedin{href:"http://www.linkedin.com/company/2673437", "data-original-title" => "Linkedin"}
-                            %li 
-                                %a.social_vimeo{href:"http://www.vimeo.com/ihid", "data-original-title" => "Vimeo"}
-
         .copyright
             .container
-                .row-fluid
-                    .span8
-                        %p 2013 &copy; New Media Education Ltd. ALL Rights Reserved. 
-                    .span4
-                        %a.pull-right{href: root_path}
-                            =image_tag "logo.png", id:"logo-footer", alt:""
+                .row-fluid.padding-top-10
+
+                    %ul.social-icons.pull-right
+                        %li 
+                            %a.social_facebook{href:"http://www.facebook.com/meducationnet", "data-original-title" => "Facebook"}
+                        %li 
+                            %a.social_twitter{href:"http://www.twitter.com/meducation", "data-original-title" => "Twitter"}
+                        %li 
+                            %a.social_googleplus{href:"https://plus.google.com/102134040286565875525", "data-original-title" => "Google Plus"}
+                        %li 
+                            %a.social_pintrest{href:"#", "data-original-title" => "Pinterest"}
+                        %li 
+                            %a.social_linkedin{href:"http://www.linkedin.com/company/2673437", "data-original-title" => "Linkedin"}
+                        %li 
+                            %a.social_vimeo{href:"http://www.vimeo.com/ihid", "data-original-title" => "Vimeo"}
+
+                    %p 2013 &copy; New Media Education Ltd. All Rights Reserved. 
