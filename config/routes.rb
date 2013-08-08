@@ -1,6 +1,7 @@
 Company::Application.routes.draw do
   get "about" => "pages#about"
   get "investors" => "pages#investors"
+  get "vision" => "pages#vision"
 
   get "jobs" => "jobs#index"
   get "designer_job" => "jobs#designer"
@@ -11,7 +12,8 @@ Company::Application.routes.draw do
   get "content_manager_job" => "jobs#content_manager"
   get "marketer_job" => "jobs#marketer"
 
-  get "blog" => "blog#rob_styles", as: :rob_styles_blog
+  get "blog" => "blog#rob_styles"
+  get "rob_styles_blog" => "blog#rob_styles"
 
   root "pages#index"
 end

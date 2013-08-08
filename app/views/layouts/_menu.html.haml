@@ -6,11 +6,15 @@
             <span class="icon-bar"></span>
         .nav-collapse.collapse
             %ul.nav
-                %li.active
+                %li{class: menu_item_class(:home)}
                     %a{href:root_path} Home
-                %li
+                %li{class: menu_item_class(:about)}
                     %a{href: about_path} About
-                %li.dropdown-toggle
+                %li{class: menu_item_class(:vision)}
+                    %a{href:vision_path} Vision
+                %li{class: menu_item_class(:blog)}
+                    %a{href:blog_path} Blog
+                %li.dropdown-toggle{class: menu_item_class(:jobs)}
                     %a{href:jobs_path, "data-hover" => "dropdown"} 
                         Jobs
                         %b.caret
@@ -28,6 +32,5 @@
                         %li
                             =link_to "Marketer", marketer_job_path
                     %b.caret-out
-                %li
-                %li
+                %li{class: menu_item_class(:investors)}
                     %a{href:investors_path} Investors
