@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'unicorn'
+gem 'newrelic_rpm'
+
 gem 'rails', '4.0.0'
 gem 'haml-rails'
 gem 'sass-rails', '~> 4.0.0'
