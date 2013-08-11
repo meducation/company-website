@@ -1,6 +1,7 @@
 =render layout: "blog/layout" do
     .blog.margin-bottom-30
-        %h3 New Company Website
+        %h3 
+            =link_to "New Company Website", new_website_blog_post_path
         %ul.unstyled.inline.blog-info
             %li
                 %i.icon-calendar 

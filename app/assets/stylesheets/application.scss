@@ -29,12 +29,21 @@ body {
 .margin-top-20 { margin-top:20px; }
 .padding-top-10 { padding-top:10px; }
 
+.servive-block .span4 {
+    padding:20px 20px;
+}
+
 .blog-page ul, .blog-page .blog-info {
     padding-top: 5px !important
 }
 
-.blog p a {
-    text-decoration:underline;
+.blog { 
+    h3 a {
+        color:#3498db
+    }
+    p a {
+        text-decoration:underline;
+    }
 }
 
 .header {

@@ -1,6 +1,7 @@
 =render layout: "blog/layout" do
     .blog.margin-bottom-30
-        %h3 Rob Styles Joins Meducation
+        %h3 
+            =link_to "Rob Styles Joins Meducation", rob_styles_blog_post_path
         %ul.unstyled.inline.blog-info
             %li
                 %i.icon-calendar 
