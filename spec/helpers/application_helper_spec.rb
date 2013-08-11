@@ -1,6 +1,18 @@
 require 'spec_helper'
 
 describe ApplicationHelper do
+  describe "page_title" do
+
+    it "should return 'Meducation' by default" do
+      helper.page_title.should == "Meducation"
+    end
+
+    it "should return @page_title if set" do
+      helper.instance_variable_set("@page_title", "Foobar")
+      helper.page_title.should == "Foobar"
+    end
+  end
+  
   describe "menu_item_class" do
     it "should correctly return active for home" do
       helper.stub(controller_name: "pages", action_name: "index")
@@ -46,7 +58,7 @@ describe ApplicationHelper do
       helper.stub(controller_name: "blog")
       helper.menu_item_class(:blog).should == "active"
       
-      helper.stub(controller_name: "blog")
+      helper.stub(controller_name: "foobar")
       helper.menu_item_class(:blog).should be_nil
     end
   end

@@ -3,6 +3,10 @@ module ApplicationHelper
     MenuItemClassDeterminer.new(self, section).determine
   end
 
+  def page_title
+    @page_title || "Meducation"
+  end
+
   class MenuItemClassDeterminer
 
     attr_reader :context, :target
@@ -26,6 +30,8 @@ module ApplicationHelper
           when "vision"; :vision
           when "investors"; :investors
           end
+        when "blog"
+          :blog
         when "jobs"
           :jobs
         end
