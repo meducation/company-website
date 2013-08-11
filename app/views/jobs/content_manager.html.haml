@@ -1,12 +1,46 @@
-%section
+.row-fluid.breadcrumbs.margin-bottom-20
     .container
-        %h2 Content Manager
-        %p If you had this job, you might describe it as:
+        %h1.pull-left Job Opportunities
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Jobs", jobs_path
+                %span.divider /
+            %li.active Community Manager
 
-        %p "My name is ______ and I am in charge of finding and managing content for Meducation.
+.container
+    .row-fluid
+        .span9
+            .headline
+                %h3 We are hiring a Content Manager!
 
-        %p My role is to help encourage medical professionals from all around the world to share content on Meducation, and to find innovative ways for both them and publishers to display that content to our community.
+            %p We are revolutionsing the way people use educational material to learn. By working with publishers, our own authors, and our community we are bringing hundreds of thousands of resources together into our innovative educational learning platform. To help us achieve this we are hiring a content manager.
+            %p This job has five main roles:
+            %ul
+                %li Work with our medical co-ordinator and authors to manage the creation of new content
+                %li Find people who create resources and encourage them to use Meducation to promote them
+                %li Organise and manage the content that is contributed on to Meducation
+                %li Work with our marketer and community manager to highlight Meducation's best content
+                %li Understand the needs of people creating resources and feed this back to our development team
 
-        %p My job has four main areas: 1) I work with our community of medical profesionals around the world to encourage them to upload and share content on Meducation. I understand the sorts of content doctors and students want to create and work with our development team to create new ways for people to contribute. 2) I work with publishers to take their content and put it on Meducation. I understand both the needs and concerns of publishers, and the desires of our community, and I work with our development team to find innovative ways to create and publish digital content. 3) I work with Meducation's in-house authors to understand the content they want to build, and liase with our developers to help them make the tools that our authors want to use. 4) I work with our marketing team, highlighting the best content for them to publicise.
+            =jobs_startup_blurb
 
-        %p My role is varied, interesting, and involves me working closely in a team. I have lots of areas of responsibility but lots of people around to support me who help me achieve success."
+            %h3 What specific skills are we looking for?
+            %p If you're right for this role, you will: 
+            %ul
+                %li Be interested or experienced in the creation of educational resources
+                %li Be able to balance a variety of different projects and tasks
+                %li Be highly motivated and be able to take control of your own time and responsibilities
+                %li Want to work with a startup and want to learn new skills
+
+            %p It will also help if you have:
+            %ul
+                %li Some medical knowledge or experience
+                %li Worked in an agile team
+
+            =jobs_apply_blurb
+
+        .span3 
+            =render "jobs/sidebar"
