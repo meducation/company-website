@@ -20,13 +20,8 @@
 
                 %p These are our official current job opportunities. 
                 %ul
-                    /%li= link_to "Designer", designer_job_path
-                    /%li= link_to "Frontend Developer", frontend_developer_job_path
-                    /%li= link_to "Backend Developer", backend_developer_job_path
-                    /%li= link_to "Full Stack Developer", full_stack_developer_job_path
-                    %li= link_to "Community Manager", community_manager_job_path
-                    %li= link_to "Content Manager", content_manager_job_path
-                    /%li= link_to "Marketer", marketer_job_path
+                    -@jobs.each do |job, url|
+                        %li= link_to job, url
                 %p 
                     If your specific skills aren't listed above but think you'd make a great addition to the Meducation team,
                     = link_to "email us", "mailto:hello@meducation.net"
