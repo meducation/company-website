@@ -10,9 +10,9 @@ class JobsController < ApplicationController
       @jobs = {
         "Community Manager" => community_manager_job_path,
         "Content Manager" => content_manager_job_path,
-        #"Designer" => designer_job_path,
         "JavaScript Developer" => javascript_developer_job_path,
         "Ruby on Rails Developer" => ror_developer_job_path,
+        "Web Designer" => web_designer_job_path,
         #"Marketer" => marketer_job_path
       }
     end
