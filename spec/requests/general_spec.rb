@@ -5,11 +5,11 @@ describe "Check everything loads" do
     root about investors vision 
     blog rob_styles_blog_post new_website_blog_post
     jobs job_principles
-    backend_developer_job
     community_manager_job content_manager_job
     designer_job
-    frontend_developer_job full_stack_developer_job
+    javascript_developer_job
     marketer_job
+    ror_developer_job
   }
   pages.each do |page|
     it "{page}_url should load" do

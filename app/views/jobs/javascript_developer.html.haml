@@ -1,0 +1,45 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Job Opportunities
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Jobs", jobs_path
+                %span.divider /
+            %li.active Ruby on Rails Developer
+
+.container
+    .row-fluid
+        .span9
+            .headline
+                %h3 We are Hiring a JavaScript Developer!
+            %p We are building an innovative social education platform, technologically centred around Ruby on Rails and AngularJS. 
+            %p Meducation is currently being converted into a single page AngularJS application. We are looking for an experienced JavaScript developer to help with this transition and continue to build the application as it develops. The right candidate will also either know or want to learn Ruby on Rails in order to help write the API where necessary.
+            =jobs_startup_blurb
+
+            %h3 What specific skills are we looking for?
+            %p If you're right for this role, you will: 
+            %ul
+                %li Have 4+ years of development experience (either professionally or in demonstratable personal projects)
+                %li Have excellent JavaScript development skills and 3+ years experience
+                %li Enjoy working (or at least dabbling) with server side technologies
+                %li Be able to balance a variety of different projects and tasks
+                %li Be highly motivated and be able to take control of your own time and responsibilities
+                %li Want to work with a startup and want to learn new skills
+
+            %p It will also help if you have:
+            %ul
+                %li A computer science (or related) degree
+                %li Experience with AnglularJS
+                %li Experience with JavaScript testing 
+                %li Experience with Ruby on Rails
+                %li A passion for open source
+                %li Worked in an agile team
+
+            =jobs_apply_blurb
+        .span3 
+            =render "jobs/sidebar"
+
+
