@@ -29,11 +29,13 @@ body {
 .margin-top-20 { margin-top:20px; }
 .padding-top-10 { padding-top:10px; }
 
-p a {
-    text-decoration:underline;
+p, li {
+    a {
+        text-decoration:underline;
+    }
 }
 
-.posts {
+.posts, .navbar {
     a {
         text-decoration:none;
     }
