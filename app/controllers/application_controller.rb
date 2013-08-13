@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+
   protect_from_forgery with: :exception
   before_action :set_jobs
+  before_action :set_blog_post_summaries
 
   private
     def set_page_title(data)
@@ -18,5 +18,20 @@ class ApplicationController < ActionController::Base
         "Web Designer" => web_designer_job_path,
         #"Marketer" => marketer_job_path
       }
+    end
+
+    def set_blog_post_summaries
+      @blog_post_summaries = [
+        {
+          url: rob_styles_blog_post_path,
+          image: "rob_styles.jpg",
+          blurb: "Rob Styles joins the Meducation team as our Employee #1."
+        },
+        {
+          url: new_website_blog_post_path,
+          image: "bg-text.png",
+          blurb: "We've launched our new company website."
+        }
+      ]
     end
 end

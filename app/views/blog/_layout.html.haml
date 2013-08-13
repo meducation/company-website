@@ -1,11 +1,10 @@
 .container
     .row-fluid.blog-page
-        .span9
-            =yield
-        .span3
-            =render "layouts/blog_posts"
+        .span9= yield
+        .span3 
+            = render "layouts/blog_posts"
 
             .headline
                 %h3 Latest Tweets
-            <a class="twitter-timeline" href="https://twitter.com/Meducation" data-widget-id="364905287938895872"></a>
-            <script src="//platform.twitter.com/widgets.js"></script>
+            %a.twitter-timeline{href: "https://twitter.com/Meducation", data: {"widget-id" => "364905287938895872"}}
+            %script{src:"//platform.twitter.com/widgets.js"}

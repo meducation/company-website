@@ -32,8 +32,7 @@
             .container
         .header
             .container
-                .logo
-                    =link_to image_tag("logo.png", alt:"Logo", id: "#logo-header"), root_path
+                .logo= link_to image_tag("logo.png", alt:"Logo", id: "#logo-header"), root_path
                 =render "layouts/menu"
 
         =yield
@@ -47,17 +46,7 @@
                         %p Meducation is revolutionising medical education by bringing medics, their knowldge, and their resources together into one digtal space. We're looking for smart, talented people to help us achieve this.
                         %p.margin-bottom-25=link_to "Join our team »", jobs_path, class: "btn-u"
 
-                        -#
-                            .headline
-                                %h3 Monthly Newsletter
-                            %p Subscribe to our newsletter and stay up to date with the latest news and progress!
-                            %form.form-inline
-                                .input-append
-                                    %input{type: "text", placeholder: "Email Address", class: "input-medium"}
-                                    %button.btn-u Subscribe
-                        
-                    .span4
-                        = render "layouts/blog_posts"
+                    .span4= render "layouts/blog_posts"
 
                     .span4
                         .headline

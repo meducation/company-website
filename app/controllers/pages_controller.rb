@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def vision
     set_page_title "Meducation's Vision"
   end
+
+  def investors
+    set_page_title "Invest in Meducation"
+  end
 end

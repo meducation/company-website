@@ -7,10 +7,11 @@
                 %span.divider /
             %li.active Blog
 
-=render layout: "blog/rob_styles_layout" do
-    %p 
-        %a.btn-u.btn-u-small{href: rob_styles_blog_post_path} Read More » 
+=render layout: "blog/layout" do
+    =render layout: "blog/rob_styles_layout" do
+        %p 
+            %a.btn-u.btn-u-small{href: rob_styles_blog_post_path} Read More » 
 
-=render layout: "blog/new_website_layout" do
-    %p 
-        %a.btn-u.btn-u-small{href: new_website_blog_post_path} Read More » 
+    =render layout: "blog/new_website_layout" do
+        %p 
+            %a.btn-u.btn-u-small{href: new_website_blog_post_path} Read More » 

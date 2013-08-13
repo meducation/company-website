@@ -2,19 +2,8 @@
     .headline
         %h3 Recent Blog Entries
 
-    %dl.dl-horizontal
-        %dt= link_to image_tag("rob_styles.jpg"), rob_styles_blog_post_path
-
-        %dd
-            %p
-                = link_to rob_styles_blog_post_path do
-                    Rob Styles joins the Meducation team as our Employee #1.
-
-
-    %dl.dl-horizontal
-        %dt= link_to image_tag("bg-text.png"), new_website_blog_post_path
-
-        %dd
-            %p
-                = link_to new_website_blog_post_path do
-                    We've launched our new company website.
+    -@blog_post_summaries.each do |blog_post|
+        %dl.dl-horizontal
+            %dt= link_to image_tag(blog_post[:image]), blog_post[:url]
+            %dd
+                %p= link_to blog_post[:blurb], blog_post[:url]
