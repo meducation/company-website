@@ -21,6 +21,7 @@
                     %ul.dropdown-menu
                         -@jobs.each do |job, url|
                             %li= link_to job, url
+                        %li= link_to "Our Principles", job_principles_path
                     %b.caret-out
                 %li{class: menu_item_class(:blog)}
                     %a{href:blog_path} Blog

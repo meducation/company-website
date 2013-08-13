@@ -1,6 +1,6 @@
 .row-fluid.breadcrumbs.margin-bottom-20
     .container
-        %h1.pull-left Principles of Working at Meduation
+        %h1.pull-left Working at Meducation
         %ul.pull-right.breadcrumb
             %li
                 =link_to "Home", root_path
@@ -8,15 +8,53 @@
             %li
                 =link_to "Jobs", jobs_path
                 %span.divider /
-            %li.active Job Principles
+            %li.active Working at Meducation
 
 .container
     .row-fluid
         .span9
             .headline
                 %h3 Our Principles
-            %p The whole ethos of our vision is around people, and this is represented in the way we want to develop our company. We want to build a team who trust and respect each other, who enjoy each others' company and who love working together. We believe that a happy team is a productive team and we know that people are individuals and work in their own ways. 
-            %p Taking a lead from successful companies like Github, Steam, 37signals and Medium, here are some of our principles with regards to work.
+            .row-fluid
+                .span8
+                    %p At Meducation, we believe that the key to our success is building a team who trust and respect each other, who enjoy each others' company and who love working together.  We know that each person is an individual and works in their own way, and its important to us that we respect and encourage that. We want our team to have the freedom to manage their own time and tasks, while getting stuck in to help each other build an amazing platform that has the potential to change the world.
+                    %p Taking a lead from successful companies like Github, Steam, 37signals and Medium, here are some of our principles with regards to work.
+                .span4= image_tag('office.jpg')
+            %blockquote.hero.margin-top-20
+                %p If we start treating people like people, and not workhorses, we can build work lives that make us better off and our world a little bit better.
+                %small Dan Pink - The Surprising Truth About What Motivates Us.
+
+            .headline
+                %h3 Self-Direction
+            .row-fluid
+                .span4
+                    .flex-video.widescreen
+                        <iframe src="//www.youtube.com/embed/TABgBBuxP9k?rel=0" frameborder="0" allowfullscreen></iframe>
+                .span8
+                    %p We want our team to have the freedom to work where they want, when they want, but we also think that working together allows for serendipitous creativity, a team bond, and shared highs and lows. We try to balance these paradoxical traits by being very relaxed about office hours and location, but by making sure we have some time each week where our team work together to work in one place.
+                    %p We also believe that having control of your own tasks and your own role is the most satisfying and inspiring way to work. We are therefore building a team of highly-motivated free-thinkers who trust each other to deliver and support each other.
+
+            .headline
+                %h3 The Right Motivation
+            .row-fluid
+                .span8
+                    %p Smart people like interesting challenges. We believe that learning new concepts, theories, and technologies, and going on to master them is the most satisfying way to work. Meducation is full of hard problems to solve, both technologically and socially, but we are going to solve them.
+                    %p We also agree with Dan Pink (see video) that motivating by money doesn't make sense. We want our team to be paid fairly, without the pressure of performance-related bonuses. Work because you're passionate, not because you have to.
+                .span4
+                    .flex-video.widescreen
+                        <iframe src="//www.youtube.com/embed/u6XAPnuFjJc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            .headline
+                %h3 Helping The Bigger Community
+
+            .span3.pull-right
+                %blockquote
+                    %p If i have seen further, it is by standing on the shoulders of giants.
+                    %small Sir Issac Newton
+            %p Meducation is all about community and this is represented in the way we work. Our platform is built on open-source software, and much of it will be contributed back through open source. We encourage our team to write articles and speak at conferences about the things we learn, so that others can benefit from both our successes and our failures.
+            %p We also encourage our team to have their own ideas and projects outside of Meducation and we support each other in them. Life is better when it's varied.
+            
+        -#
             .row-fluid.servive-block
                 .span4
                     %h4 Work when's right for you
@@ -38,12 +76,10 @@
                     %h4 Be challenged and learn
                     %p
                         %i.icon-puzzle-piece
-                    %p In our experience smart people like interesting challenges. The scale and complexity of what we want to build is exciting in itself, and we have loads of hard problems to solve, which others have failed to do, both on the tech and social sides.
                 .span4
                     %h4 Create your own projects.
                     %p
                         %i.icon-sitemap
-                    %p Life is boring if it's spent on just one thing. If you have ideas and concepts you want to explore, we want to support you in that and ue our knowledge and expertise to help you build your future!
                 .span4
                     %h4 Contribute to open source
                     %p
