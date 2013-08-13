@@ -18,7 +18,18 @@
             .row-fluid
                 .span8
                     %p At Meducation, we believe that the key to our success is building a team who trust and respect each other, who enjoy each others' company and who love working together.  We know that each person is an individual and works in their own way, and its important to us that we respect and encourage that. We want our team to have the freedom to manage their own time and tasks, while getting stuck in to help each other build an amazing platform that has the potential to change the world.
-                    %p Taking a lead from successful companies like Github, Steam, 37signals and Medium, here are some of our principles with regards to work.
+                    %p 
+                        Taking advice from successful companies like 
+                        =succeed(',') do
+                            =link_to "Github", "http://zachholman.com/posts/how-github-works/", title: "How Github Works"
+                        =succeed(',') do
+                            =link_to "Valve", "http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf", title: "The Valve Handbook"
+                        =succeed(', and ') do
+                            =link_to "37signals", "http://www.inc.com/magazine/20110401/jason-fried-why-i-run-a-flat-company.html", title: "Why I Run a Flat Company"
+                        =succeed(',') do
+                            =link_to "Medium", "http://firstround.com/article/How-Medium-is-building-a-new-kind-of-company-with-no-managers#", title: "How Medium is building a new kind of company with no managers"
+                        here are some of our principles with regards to work.
+                            
                 .span4= image_tag('office.jpg')
             %blockquote.hero.margin-top-20
                 %p If we start treating people like people, and not workhorses, we can build work lives that make us better off and our world a little bit better.
@@ -31,7 +42,10 @@
                     .flex-video.widescreen
                         <iframe src="//www.youtube.com/embed/TABgBBuxP9k?rel=0" frameborder="0" allowfullscreen></iframe>
                 .span8
-                    %p We want our team to have the freedom to work where they want, when they want, but we also think that working together allows for serendipitous creativity, a team bond, and shared highs and lows. We try to balance these paradoxical traits by being very relaxed about office hours and location, but by making sure we have some time each week where our team work together to work in one place.
+                    %p 
+                        We want our team to have the freedom to work where they want, when they want, but we also think that working together allows for serendipitous creativity, a team bond, and shared highs and lows. We try to balance these paradoxical traits by being 
+                        =link_to "very relaxed about office hours", "http://zachholman.com/posts/how-github-works-hours/"
+                        and location, but by making sure we have some time each week where our team work together to work in one place.
                     %p We also believe that having control of your own tasks and your own role is the most satisfying and inspiring way to work. We are therefore building a team of highly-motivated free-thinkers who trust each other to deliver and support each other.
 
             .headline
