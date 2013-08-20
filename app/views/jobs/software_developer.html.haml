@@ -1,0 +1,43 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Job Opportunities
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Jobs", jobs_path
+                %span.divider /
+            %li.active Software Developer
+
+.container
+    .row-fluid
+        .span9
+            .headline
+                %h3 We are Hiring an Experienced Software Developer
+            %p We are building an innovative social education platform that will be used by milions of medics. 
+            %p Meducation is being developed as a service-orientated architecture because we believe it is important to use the the right technology for the right situation. We are looking for an experienced software developer who is comfortable learning technologies and languages to help build our platform. If you're the right person for this role you will care about good software development principles, understand which technologies are needed for which situations, and be able to quickly implement high quality code.
+            =jobs_startup_blurb
+
+            %h3 What specific skills are we looking for?
+            %p If you're right for this role, you will: 
+            %ul
+                %li Have 4+ years of development experience (either professionally or in demonstratable personal projects)
+                %li Have excellent development skills 
+                %li Understand and care about software principles (e.g. SOLID)
+                %li Enjoy learning new languages and be comfortable switching between technologies
+                %li Be able to balance a variety of different projects and tasks
+                %li Be highly motivated and be able to take control of your own time and responsibilities
+                %li Want to work with a startup and want to learn new skills
+
+            %p It will also help if you have:
+            %ul
+                %li A computer science (or related) degree
+                %li A passion for open source
+                %li Worked in an agile team
+
+            =jobs_apply_blurb
+        .span3 
+            =render "jobs/sidebar"
+
+
