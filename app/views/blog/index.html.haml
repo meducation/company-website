@@ -8,6 +8,10 @@
             %li.active Blog
 
 =render layout: "blog/layout" do
+    =render layout: "blog/taiyab_raja_layout" do
+        %p 
+            %a.btn-u.btn-u-small{href: taiyab_raja_blog_post_path} Read More » 
+
     =render layout: "blog/rob_styles_layout" do
         %p 
             %a.btn-u.btn-u-small{href: rob_styles_blog_post_path} Read More » 

@@ -1,0 +1,38 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Latest Posts
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li
+                =link_to "Blog", blog_path
+                %span.divider /
+            %li.active Taiyab Raja Joins Meducation
+
+
+=render layout: "blog/layout" do
+    =render layout: "blog/taiyab_raja_layout" do
+
+        .pull-right= image_tag("aiya.png", style: "width:400px;border:1px solid #aaa;margin:0px 0px 20px 20px")
+        %p 
+            Amazingly, hiring Taiyab means that I met both of our first two employees at Launch48 in May. Taiyab worked on Project Aiya with both me and 
+            =succeed(",") do
+                =link_to "Rob", rob_styles_blog_post_path
+            designing our logo, website and mobile app. He was also instrumental in choosing our name and developing our brand. The speed with which he managed to produce exceptionally professional and fresh designs really impressed the whole team. 
+        %p Having got to know Taiyab over the last few months, chatted in depth to him about his own startup ideas, and watched him working for various clients, he quickly became my de facto choice as our designer. This was only reinforced after he turned up one day in Urban Coffee having created a total redesign of our news feed, which exactly tapped into the vision that Al and I have.
+        %p It's taken a lot of thought and soul searching for Taiyab to decide to take a break from university to come and work with the Meducation team. His decision to do so is based on his belief in our vision and the team that we're building, which has been massively encouraging to both me and Al. We have no doubts that Taiyab will be a crucial piece in the Jigsaw of people who will make Meducation work, and have a real belief that his decision to join us will pay off!
+
+        #disqus_thread.margin-top-20
+        :javascript
+            var disqus_shortname = 'meducation-company';
+            var disqus_identifier = 'blog/taiyab_raja';
+            var disqus_title = 'Taiyab Raja Joins Meducation';
+            var disqus_url = 'http://company.meducation.net/blog/taiyab_raja';
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+

@@ -16,7 +16,7 @@ Company::Application.routes.draw do
   get "jobs/web_designer", to: "jobs#web_designer", as: "web_designer_job"
 
   get "blog", to: "blog#index"
-  %w{rob_styles new_website}.each do |title|
+  %w{rob_styles taiyab_raja new_website}.each do |title|
     get "blog/#{title}", to: "blog##{title}", as: "#{title}_blog_post"
   end
 

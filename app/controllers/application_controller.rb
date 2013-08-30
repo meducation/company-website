@@ -18,12 +18,17 @@ class ApplicationController < ActionController::Base
         "JavaScript Developer" => javascript_developer_job_path,
         "Ruby on Rails Developer" => ruby_on_rails_developer_job_path,
         "Software Developer" => software_developer_job_path,
-        "Web Designer" => web_designer_job_path,
+        #"Web Designer" => web_designer_job_path,
       }
     end
 
     def set_blog_post_summaries
       @blog_post_summaries = [
+        {
+          url: taiyab_raja_blog_post_path,
+          image: "taiyab.jpg",
+          blurb: "Taiyab joins the Meducation team as our designer."
+        },
         {
           url: rob_styles_blog_post_path,
           image: "rob_styles.jpg",

@@ -15,6 +15,11 @@
         .span9
             .headline
                 %h3 We are Hiring a Web Designer
+            .alert.alert-error
+                %strong Sorry! 
+                This job role has now been 
+                =succeed(".") do
+                    =link_to "filled by Taiyab Raja", taiyab_raja_blog_post_path
             %p We are building an innovative social education platform that will be used by millions of medics.
             %p Meducation needs to be beautiful and easy to use - currently it is neither. We are looking for a talented web designer to come and change this. The right candidate will have a strong focus on clean user-centric designs and enjoy crafting experiences that are powerful but simple to use.
             %p You will have a high degree of creative control and be able to stamp your own personality on the feel of Meducation. The right candidate needs to be able to work in a quick iterative manner, quickly piecing together basic designs and expanding and improving them over time.
