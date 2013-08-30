@@ -15,6 +15,12 @@
         = javascript_include_tag "application", "data-turbolinks-track" => true
         =favicon_link_tag "favicon.ico"
         = csrf_meta_tags
+
+        %meta{property:"og:title", content:"Meducation"}
+        %meta{property:"og:type", content:"Meducation"}
+        %meta{property:"og:site_name", content:"Meducation"}
+        %meta{property:"og:url", content:"company.meducation.net"}
+        %meta{property:"og:image", content:asset_url("logo.png")}
         
         %meta{charset: "utf-8"}
         %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
