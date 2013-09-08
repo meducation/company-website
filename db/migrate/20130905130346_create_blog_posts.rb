@@ -7,8 +7,8 @@ class CreateBlogPosts < ActiveRecord::Migration
       t.string :summary
       t.string :thumb_image
       t.string :header_image
-      t.column :start_content, "LONGTEXT"
-      t.column :end_content, "LONGTEXT"
+      t.text :start_content
+      t.text :end_content
       t.timestamps
     end
   end
