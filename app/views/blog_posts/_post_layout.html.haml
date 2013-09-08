@@ -1,0 +1,19 @@
+.blog.margin-bottom-30
+    %h3 
+        =link_to blog_post.title, blog_post
+    %ul.unstyled.inline.blog-info
+        %li
+            %i.icon-calendar 
+            =blog_post.created_at.to_date.to_s(:long)
+        %li
+            %i.icon-pencil 
+            =blog_post.author
+        %li
+            %i.icon-tags
+            %a{href:"#"} Team
+    .blog-img
+        =image_tag blog_post.header_image
+
+    =raw blog_post.start_content
+
+    =yield

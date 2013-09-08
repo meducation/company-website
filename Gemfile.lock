@@ -39,6 +39,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    friendly_id (5.0.0.beta4)
+      activerecord (~> 4.0.0)
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -142,6 +144,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  friendly_id (= 5.0.0.beta4)
   haml-rails
   jquery-rails
   jquery-turbolinks

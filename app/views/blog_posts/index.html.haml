@@ -1,0 +1,14 @@
+.row-fluid.breadcrumbs.margin-bottom-20
+    .container
+        %h1.pull-left Latest Posts
+        %ul.pull-right.breadcrumb
+            %li
+                =link_to "Home", root_path
+                %span.divider /
+            %li.active Blog
+
+=render layout: "blog_posts/layout" do
+    -@blog_posts.each do |blog_post|
+        =render layout: "blog_posts/post_layout", locals: {blog_post: blog_post} do
+            %p 
+                %a.btn-u.btn-u-small{href: blog_post_path(blog_post)} Read More » 

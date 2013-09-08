@@ -4,6 +4,6 @@
 
     -@blog_post_summaries.each do |blog_post|
         %dl.dl-horizontal
-            %dt= link_to image_tag(blog_post[:image]), blog_post[:url]
+            %dt= link_to image_tag(blog_post.thumb_image), blog_post
             %dd
-                %p= link_to blog_post[:blurb], blog_post[:url]
+                %p= link_to blog_post.summary, blog_post

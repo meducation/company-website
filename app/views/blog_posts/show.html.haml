@@ -6,23 +6,24 @@
                 =link_to "Home", root_path
                 %span.divider /
             %li
-                =link_to "Blog", blog_path
+                =link_to "Blog", blog_posts_path
                 %span.divider /
-            %li.active New Company Website
+            %li.active= @blog_post.title
 
-=render layout: "blog/layout" do
-    =render layout: "blog/new_website_layout" do
+
+=render layout: "blog_posts/layout" do
+    =render layout: "blog_posts/post_layout", locals: {blog_post: @blog_post} do
+        =raw @blog_post.end_content
 
         #disqus_thread.margin-top-20
         :javascript
             var disqus_shortname = 'meducation-company';
-            var disqus_identifier = 'blog/new_website';
-            var disqus_title = 'New Company Website ';
-            var disqus_url = 'http://company.meducation.net/blog/new_website';
+            var disqus_identifier = '#{blog_post_path(@blog_post)}';
+            var disqus_title = '#{@blog_post.title}';
+            var disqus_url = 'http://company.meducation.net#{blog_post_path(@blog_post)}';
 
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
-

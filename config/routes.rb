@@ -15,9 +15,13 @@ Company::Application.routes.draw do
   get "jobs/software_developer", to: "jobs#software_developer", as: "software_developer_job"
   get "jobs/web_designer", to: "jobs#web_designer", as: "web_designer_job"
 
-  get "blog", to: "blog#index"
-  %w{rob_styles taiyab_raja new_website}.each do |title|
-    get "blog/#{title}", to: "blog##{title}", as: "#{title}_blog_post"
+  resources :blog_posts, only: [:index, :show], path: "blog"
+  {
+    rob_styles: 'rob-styles-joins-meducation',
+    taiyab_raja: 'taiyab-raja-joins-meducation',
+    new_website: 'new-company-website'
+  }.each do |old_path, slug|
+    get "blog/#{old_path}", to: redirect("blog/#{slug}")
   end
 
   get "jobs/ror_developer", to: redirect("jobs/ruby_on_rails_developer")

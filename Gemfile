@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
+gem 'friendly_id', '5.0.0.beta4'
 
 group :development do
   gem 'sqlite3'

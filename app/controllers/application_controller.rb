@@ -23,22 +23,6 @@ class ApplicationController < ActionController::Base
     end
 
     def set_blog_post_summaries
-      @blog_post_summaries = [
-        {
-          url: taiyab_raja_blog_post_path,
-          image: "taiyab.jpg",
-          blurb: "Taiyab joins the Meducation team as our designer."
-        },
-        {
-          url: rob_styles_blog_post_path,
-          image: "rob_styles.jpg",
-          blurb: "Rob Styles joins the Meducation team as our Employee #1."
-        },
-        {
-          url: new_website_blog_post_path,
-          image: "bg-text.png",
-          blurb: "We've launched our new company website."
-        }
-      ]
+      @blog_post_summaries = BlogPost.select([:id, :slug, :thumb_image, :summary]).order('created_at DESC')
     end
 end
