@@ -15,6 +15,11 @@
         .span9
             .headline
                 %h3 We are Hiring a Community Manager
+            .alert.alert-error
+                %strong Sorry! 
+                This job role has now been 
+                =succeed(".") do
+                    =link_to "filled by Taiyab Raja", taiyab_raja_blog_post_path
             %p We are building the biggest online community of medics worldwide. We aim to have to two million people register with us over the next five years, ranging from students to senior doctors. Understanding and listening to our community, and reacting to its input is very important to us. To help with this we are looking for an enthusiastic community manager to join our team. 
             %p This job has four main roles:
             %ul

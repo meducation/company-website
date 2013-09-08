@@ -11,11 +11,11 @@ class ApplicationController < ActionController::Base
  
     def set_jobs
       @jobs = {
-        "Community Manager" => community_manager_job_path,
+        #"Community Manager" => community_manager_job_path,
         "Content Manager" => content_manager_job_path,
         #"Marketer" => marketer_job_path,
         #"Mobile Developer" => mobile_developer_job_path,
-        "JavaScript Developer" => javascript_developer_job_path,
+        #"JavaScript Developer" => javascript_developer_job_path,
         "Ruby on Rails Developer" => ruby_on_rails_developer_job_path,
         "Software Developer" => software_developer_job_path,
         #"Web Designer" => web_designer_job_path,

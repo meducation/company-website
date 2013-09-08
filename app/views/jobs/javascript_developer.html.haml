@@ -15,6 +15,11 @@
         .span9
             .headline
                 %h3 We are Hiring a JavaScript Developer
+            .alert.alert-error
+                %strong Sorry! 
+                This job role has now been 
+                =succeed(".") do
+                    =link_to "filled by Taiyab Raja", taiyab_raja_blog_post_path
             %p We are building an innovative social education platform that will be used by millions of medics. Meducation's frontend is currently being converted into AngularJS SPA applications. We are looking for an experienced JavaScript developer to help with this transition and continue to build the application as it develops. You will need to have excellent JavaScript programming skills and be experienced and comfortable with writing comprehensive test coverage. 
             =jobs_startup_blurb
 
